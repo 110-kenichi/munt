@@ -1,0 +1,8 @@
+/mt32emu/Debug
+/mt32emu/Release
+/mt32emu/x64/Debug
+/mt32emu/x64/Release
+/mt32emu/*.filters
+/mt32emu/*.user
+/mt32emu/soxr/msvc/*.filters
+/mt32emu/soxr/msvc/*.user

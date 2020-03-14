@@ -39,7 +39,7 @@ static const Bit8u PartialMixStruct[13] = {
 };
 
 RhythmPart::RhythmPart(Synth *useSynth, unsigned int usePartNum): Part(useSynth, usePartNum) {
-	strcpy(name, "Rhythm");
+	strcpy_s(name, "Rhythm");
 	rhythmTemp = &synth->mt32ram.rhythmTemp[0];
 	refresh();
 }
@@ -54,7 +54,7 @@ Part::Part(Synth *useSynth, unsigned int usePartNum) {
 		// Nasty hack for rhythm
 		timbreTemp = NULL;
 	} else {
-		sprintf(name, "Part %d", partNum + 1);
+		sprintf_s(name, "Part %d", partNum + 1);
 		timbreTemp = &synth->mt32ram.timbreTemp[partNum];
 	}
 	currentInstr[0] = 0;

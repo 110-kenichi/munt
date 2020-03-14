@@ -17,7 +17,7 @@
 #ifndef MT32EMU_SAMPLERATE_ADAPTER_H
 #define MT32EMU_SAMPLERATE_ADAPTER_H
 
-#include <samplerate.h>
+#include "..\..\soxr\src\samplerate.h"
 
 #include "../Enumerations.h"
 

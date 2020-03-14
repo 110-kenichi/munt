@@ -17,7 +17,7 @@
 #ifndef MT32EMU_SOXR_ADAPTER_H
 #define MT32EMU_SOXR_ADAPTER_H
 
-#include <soxr.h>
+#include "..\..\soxr\src\soxr.h"
 
 #include "../Enumerations.h"
 

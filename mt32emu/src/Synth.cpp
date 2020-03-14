@@ -1494,7 +1494,7 @@ void Synth::writeMemoryRegion(const MemoryRegion *region, Bit32u addr, Bit32u le
 				memcpy(timbreName, mt32ram.timbres[128 + timbreNum].timbre.common.name, 10);
 				timbreName[10] = 0;
 			} else {
-				strcpy(timbreName, "[None]");
+				strcpy_s(timbreName, "[None]");
 			}
 #if MT32EMU_MONITOR_SYSEX > 0
 			printDebug("WRITE-RHYTHM (%d-%d@%d..%d): %d; level=%02x, panpot=%02x, reverb=%02x, timbre=%d (%s)", first, last, off, off + len, i, mt32ram.rhythmTemp[i].outputLevel, mt32ram.rhythmTemp[i].panpot, mt32ram.rhythmTemp[i].reverbSwitch, mt32ram.rhythmTemp[i].timbre, timbreName);

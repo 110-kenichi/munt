@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{613ABA51-3D44-4FE5-A7E8-5803688FC56F}</ProjectGuid>
+    <RootNamespace>mt32emu</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Analog.cpp" />
+    <ClCompile Include="src\BReverbModel.cpp" />
+    <ClCompile Include="src\c_interface\c_interface.cpp" />
+    <ClCompile Include="src\File.cpp" />
+    <ClCompile Include="src\FileStream.cpp" />
+    <ClCompile Include="src\LA32FloatWaveGenerator.cpp" />
+    <ClCompile Include="src\LA32Ramp.cpp" />
+    <ClCompile Include="src\LA32WaveGenerator.cpp" />
+    <ClCompile Include="src\MidiStreamParser.cpp" />
+    <ClCompile Include="src\Part.cpp" />
+    <ClCompile Include="src\Partial.cpp" />
+    <ClCompile Include="src\PartialManager.cpp" />
+    <ClCompile Include="src\Poly.cpp" />
+    <ClCompile Include="src\ROMInfo.cpp" />
+    <ClCompile Include="src\SampleRateConverter.cpp" />
+    <ClCompile Include="src\sha1\sha1.cpp" />
+    <ClCompile Include="src\srchelper\InternalResampler.cpp" />
+    <ClCompile Include="src\srchelper\SamplerateAdapter.cpp" />
+    <ClCompile Include="src\srchelper\SoxrAdapter.cpp" />
+    <ClCompile Include="src\srchelper\srctools\src\FIRResampler.cpp" />
+    <ClCompile Include="src\srchelper\srctools\src\IIR2xResampler.cpp" />
+    <ClCompile Include="src\srchelper\srctools\src\LinearResampler.cpp" />
+    <ClCompile Include="src\srchelper\srctools\src\ResamplerModel.cpp" />
+    <ClCompile Include="src\srchelper\srctools\src\SincResampler.cpp" />
+    <ClCompile Include="src\Synth.cpp" />
+    <ClCompile Include="src\Tables.cpp" />
+    <ClCompile Include="src\TVA.cpp" />
+    <ClCompile Include="src\TVF.cpp" />
+    <ClCompile Include="src\TVP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Analog.h" />
+    <ClInclude Include="src\BReverbModel.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\c_interface\cpp_interface.h" />
+    <ClInclude Include="src\c_interface\c_interface.h" />
+    <ClInclude Include="src\c_interface\c_types.h" />
+    <ClInclude Include="src\Enumerations.h" />
+    <ClInclude Include="src\File.h" />
+    <ClInclude Include="src\FileStream.h" />
+    <ClInclude Include="src\globals.h" />
+    <ClInclude Include="src\internals.h" />
+    <ClInclude Include="src\LA32FloatWaveGenerator.h" />
+    <ClInclude Include="src\LA32Ramp.h" />
+    <ClInclude Include="src\LA32WaveGenerator.h" />
+    <ClInclude Include="src\MemoryRegion.h" />
+    <ClInclude Include="src\MidiEventQueue.h" />
+    <ClInclude Include="src\MidiStreamParser.h" />
+    <ClInclude Include="src\mmath.h" />
+    <ClInclude Include="src\mt32emu.h" />
+    <ClInclude Include="src\Part.h" />
+    <ClInclude Include="src\Partial.h" />
+    <ClInclude Include="src\PartialManager.h" />
+    <ClInclude Include="src\Poly.h" />
+    <ClInclude Include="src\ROMInfo.h" />
+    <ClInclude Include="src\SampleRateConverter.h" />
+    <ClInclude Include="src\sha1\sha1.h" />
+    <ClInclude Include="src\srchelper\InternalResampler.h" />
+    <ClInclude Include="src\srchelper\SamplerateAdapter.h" />
+    <ClInclude Include="src\srchelper\SoxrAdapter.h" />
+    <ClInclude Include="src\srchelper\srctools\include\FIRResampler.h" />
+    <ClInclude Include="src\srchelper\srctools\include\FloatSampleProvider.h" />
+    <ClInclude Include="src\srchelper\srctools\include\IIR2xResampler.h" />
+    <ClInclude Include="src\srchelper\srctools\include\LinearResampler.h" />
+    <ClInclude Include="src\srchelper\srctools\include\ResamplerModel.h" />
+    <ClInclude Include="src\srchelper\srctools\include\ResamplerStage.h" />
+    <ClInclude Include="src\srchelper\srctools\include\SincResampler.h" />
+    <ClInclude Include="src\Structures.h" />
+    <ClInclude Include="src\Synth.h" />
+    <ClInclude Include="src\Tables.h" />
+    <ClInclude Include="src\TVA.h" />
+    <ClInclude Include="src\TVF.h" />
+    <ClInclude Include="src\TVP.h" />
+    <ClInclude Include="src\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="soxr\msvc\libsoxr.vcxproj">
+      <Project>{af9ad75c-4785-4432-bac3-adab1e7f1192}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
