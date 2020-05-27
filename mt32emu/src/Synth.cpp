@@ -285,7 +285,7 @@ Synth::Synth(ReportHandler *useReportHandler) :
 	soundGroupNames = NULL;
 	midiQueue = NULL;
 	extensions.midiEventQueueSize = DEFAULT_MIDI_EVENT_QUEUE_SIZE;
-	extensions.midiEventQueueSysexStorageBufferSize = 0;
+	extensions.midiEventQueueSysexStorageBufferSize = DEFAULT_MIDI_EVENT_QUEUE_SIZE;
 	lastReceivedMIDIEventTimestamp = 0;
 	memset(parts, 0, sizeof(parts));
 	renderedSampleCount = 0;
