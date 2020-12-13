@@ -8,3 +8,4 @@
 /mt32emu/soxr/msvc/*.user
 /mt32emu/Win32/Debug
 /mt32emu/Win32/Release
+/mt32emu/.vs/mt32emu/v15
